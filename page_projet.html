@@ -7,81 +7,97 @@
         <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="page_projet.css"/>
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        
     </head>
 
 
 
     <body>
-        <nav>
-            <div id="nav_bar">
-              <div id="lien-container">
-              <a href="./index.html">[home]</a>
-              <a>EXPERIENCES</a>
-              <a>PARCOURS</a>
-              <a>ME CONTACTER</a>
-              </div>
-            </div>
-          </nav>
+      <nav>
+        <div id="nav_bar">
+          <a href="./index.html">[HOME]</a>
+          <a href="./page_projet.html">PROJETS</a>
+          <a>MON PARCOURS</a>
+          <a>ME CONTACTER</a>
+
+          <!-- 3 barre menu, appelle de la balise path pour dessiner manuellement les barres -->
+          <div class="container-menu-bar" onclick="this.classList.toggle('active')">
+            <div id="background"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewbox="0 0 200 200">
+                  <g stroke-width="6.5" stroke-linecap="round">
+                    <path d="M72 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff"/>
+                    <path d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554" fill="none" stroke="#fff"/>
+                    <path d="M72 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff"/>
+                    <path d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554" fill="none" stroke="#fff"/>
+                    <path d="M100.75 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff"/>
+                    <path d="M100.75 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff"/>
+                  </g>
+              </svg>
+          </div>
+        </div>
+      </nav>
 
     <main>
       <div id="container-page">
         <div class="container-card">
-            <div id="card-convertisseur">
-                <a href="#">
+
+            <div id="card-convertisseur" class="card">
+                <a href="./RepExt/RET.EXP PROJET LOWATEM.pdf" download="RepTxt Lowatem">
                   <div class="container-image">
                     <img src="./Image/capture_lowtem1.png" alt="Screenchot Lowatem">
                   </div>          
                 </a>
             </div>
 
-            <div id="card-pong"> 
-                <a href="#">
+            <div id="card-pong" class="card"> 
+                <a href="./RepExt/RET.EXP PROJET WEB.pdf" download="RepTxt Web">
                     <div class="container-image">
-                      <img src="https://yard.onl/sitelycee/cours/php/lib/NouvelElement500.jpg" alt="#">
+                      <img src="./Image/Capture_web.PNG" alt="#">
                     </div>          
                   </a>
 
             </div>
-            <div id="card-lowatem">
-                <a href="#">
+            <div id="card-lowatem" class="card">
+                <a href="./RepExt/RET.EXP PROJET AFFICHE.pdf" download="RepTxt Affiche">
                     <div class="container-image">
                       <img src="./Image/Affiche Final.png" alt="MATERIEL MEDICALE">
                     </div>          
                   </a>
 
             </div>
-            <div id="card-affiche-iut">
-                <a href="#">
+            <div id="card-affiche-iut" class="card">
+                <a href="./RepExt/RET.EXP PROJET PONG.pdf" download="RepTxt Pong">
                     <div class="container-image">
                       <img src="./Image/pong_jeu" alt="Screenchot Pong">
                     </div>          
                   </a>
 
             </div>
-            <div id="card-base-de-données">
-                <a href="#">
+            <div id="card-base-de-données" class="card">
+                <a href="./RepExt/RET.EXP PROJET INSTALLATION DE POSTE.pdf" download="RepTxt Installation de poste">
                     <div class="container-image">
-                      <img src="https://yard.onl/sitelycee/cours/php/lib/NouvelElement500.jpg" alt="#">
+                      <img src="https://blog.facialix.com/wp-content/uploads/2021/08/3930400_0bea.jpg" alt="#">
                     </div>          
                   </a>
 
             </div>
-            <div id="card-site-web">
-                <a href="#">
+            <div id="card-site-web" class="card">
+                <a href="./RepExt/RET.EXP PROJET BASE DE DONNEE .pdf" download="RepTxt SQL">
                     <div class="container-image">
-                      <img src="https://yard.onl/sitelycee/cours/php/lib/NouvelElement500.jpg" alt="#">
+                      <img src="https://www.softfluent.fr/wp-content/uploads/2019/10/SQL.png" alt="#">
                     </div>          
                   </a>
 
             </div>
-            <div id="a-mettre1">
-                <a href="#">
+            <div id="a-mettre1" class="card">
+                <a href="./RepExt/RET.EXP PROJET GESTION DE PROJET.pdf" download="RepTxt Entreprise">
                     <div class="container-image">
-                      <img src="https://yard.onl/sitelycee/cours/php/lib/NouvelElement500.jpg" alt="#">
+                      <img src="./Image/Logo-RHPC.jpg" alt="#">
                     </div>          
                   </a>
             </div>
         </div>
+
         <div id="container-text-1">
         </div>
 
@@ -109,6 +125,8 @@
       
     </main>
     <footer>
+      <h2>Tout droit réservé</h2>
+      <h4>Site Portofolio créé a dans le cadre d'un projet.</h4>
     </footer>
 </body>
 </html>
