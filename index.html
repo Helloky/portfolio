@@ -6,6 +6,7 @@
         <meta charset="utf8">
         <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="page principale.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
     </head>
 
     <body>
@@ -16,18 +17,34 @@
             <a>MON PARCOURS</a>
             <a>ME CONTACTER</a>
 
+            <!-- 3 barre menu, appelle de la balise path pour dessiner manuellement les barres -->
+            <div class="container-menu-bar" onclick="this.classList.toggle('active')">
+              <div id="background"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewbox="0 0 200 200">
+                    <g stroke-width="6.5" stroke-linecap="round">
+                      <path d="M72 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff"/>
+                      <path d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554" fill="none" stroke="#fff"/>
+                      <path d="M72 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff"/>
+                      <path d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554" fill="none" stroke="#fff"/>
+                      <path d="M100.75 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff"/>
+                      <path d="M100.75 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff"/>
+                    </g>
+                </svg>
+            </div>
           </div>
         </nav>
 
           <main>
             
             <!-- partie hello world -->
-
             <div id="slide1" class="slide">
                 <div class="content-hello">
+                  <span class="triangle-blanc"></span>
+                  <span id="tblanc5"></span>
+                  <span id="tblanc6"></span>
                     <div id="box-hello">
                       <div>
-
+                       
                         <h2>Hello</h2> <h2 class="s">world</h2>
                       </div>
                         <h2 class="line-1 anim-typewriter">I'm Huzaïfah.</h2>
@@ -37,13 +54,21 @@
                             <p>Passionnée de Web design et du dévelloppement côté Front-End</p>
                           </span>
                         </div>
+                        <div id="contact">
+                          <a href="https://github.com/Helloky"><img src="https://cdn-icons-png.flaticon.com/512/733/733609.png"></a>
+                          <a href="https://fr.linkedin.com/"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"></a>
+                          <a href="mailto:huzai.panchbhaya@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/95/95627.png"></a>
+                        </div>
                          <div class="fleche">
-                          
                           <h3>Déroulez pour découvrir</h3>
                           <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules"
                            data-ca3_icon="" href="#slide2"></a>
                         </div>
-                </div>   
+                        
+                </div>
+                <span id="tblanc2"></span>
+                <span id="tblanc3"></span>
+                <span id="tblanc4"></span>
                 </div>
                 
                 
@@ -51,26 +76,27 @@
             <!--Partie description-->
             
           <div id="slide2" class="slide">
+            <span class="cercle"></span>
               <div class="form-blue-purple">
                 <div class="form-red-blue">
                   <div class="form-red">
                     <div id="slide2-content-principal">
-                      <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. M
-                          auris interdum imperdiet est viverra malesuada. 
-                          Donec eu consectetur odio. Phasellus mollis erat 
-                          sed turpis aliquet, at elementum felis pulvinar. 
-                          Nunc lobortis, erat eu posuere condimentum, sapien 
-                          lacus dictum nisi</p>
-
-                      </div>
-                      
                     </div>
+                  </div> 
+                </div>
+                </div>
+                <div id ="description">
+                  <span class="vertical">
+                    <div>
+                  <p>Je m'appelle <p class="blue">Huzaifah</p> <p class="purple">PANCHBHAYA</p>, et je suis un grand passionée du web. D'origine Indienne et habitant en france, j'ai actuellement 18 ans et 
+                    je suis en période de formation en première année en <strong>IUT informatique </strong>afin d'apprendre et consolider
+                    mes bases dans l'optique de devenir un jour un <strong>développeur web full stack.</strong></p>
                   </div>
-
-                  
-                    
-                  </div>
+                  </span>
+                
+                </div>
+                <div id="citation-container">
+                  <h3 class="citation">"Le développeur est un artiste, il crée de l'art à l'aide de lignes de code."</h3>
                 </div>
 
 
@@ -81,6 +107,7 @@
           <!--Partie catégories-->
           
           <div id="slide3" class="slide">
+            <h1>en cours de réalisation : section parcours</h1>
             <div class="container-decouvrir">
               <h3>Découvrez les projets !</h3>
               <a href ="page_projet.html"><button class="button-animation">Découvrez mes projets</button></a>
@@ -90,9 +117,9 @@
 
           </main>
           <footer>
-            
+            <h2>Tout droit réservé</h2>
+          <h4>Site Portofolio créé dans le cadre d'un projet.</h4>
           </footer>
 
     </body>
 </html>
-
