@@ -1,136 +1,385 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Portofol.io | Page principale</title>
-        <meta charset="utf8">
-        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"> -->
-        <link rel="stylesheet" href="page principale.css"/>
-        <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
-    </head>
 
-    <body>
-        <nav>
-          <div id="nav_bar">
-            <a href="./index.html"><img src="./Image/Logo Huz.png"></a>
-            <a href="./page_projet.html">PROJETS</a>
-            <a>MON PARCOURS</a>
-            <a>ME CONTACTER</a>
+<head>
+  <title>Portofolio | Page principale</title>
+  <meta charset="utf8">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="page principale.css" />
+  <link rel="stylesheet" href="jquery.pagepiling.css">
+  <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+  <link rel="stylesheet" href="triangle.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
 
-            <!-- 3 barre menu, appelle de la balise path pour dessiner manuellement les barres -->
-          </div>
-          <div class="nav_bar-mobile">
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-              <span></span>
-            </label>
-            <ul class="menu__box">
-              <li><a class="menu__item" href="./index.html">HOME</a></li>
-              <li><a class="menu__item" href="./page_projet.html">PROJETS</a></li>
-              <li><a class="menu__item" href="#">MON PARCOURS</a></li>
-              <li><a class="menu__item" href="#">ME CONTACTER</a></li>
-            </ul>
-          </div>
-        </nav>
-        
+<body>
 
-          <main>
-            
-            <!-- partie hello world -->
-            <div id="slide1" class="slide">
-                <div class="content-hello">
-                  <span class="triangle-blanc"></span>
-                  <span id="tblanc5"></span>
-                  <span id="tblanc6"></span>
-                    <div id="box-hello">
-                      <div>
-                       
-                        <h2>Hello</h2> <h2 class="s">world</h2>
-                      </div>
-                        <h2 class="line-1 anim-typewriter">I'm Huzaifah.</h2>
-                        <div class="description">
-                          <span class="vertical">
-                            <p>Etudiant de premiére année en BUT informatique</p>
-                            <p>Passionnée de Web design et du dévelloppement côté Front-End</p>
-                          </span>
-                        </div>
-                        <div class="contact">
-                          <a href="https://github.com/Helloky"><img src="https://cdn-icons-png.flaticon.com/512/733/733609.png"></a>
-                          <a href="https://fr.linkedin.com/"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"></a>
-                          <a href="mailto:huzai.panchbhaya@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/95/95627.png"></a>
-                        </div>
-                         <div class="fleche">
-                          <h3>Déroulez pour découvrir</h3>
-                          <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules"
-                           data-ca3_icon="" href="#slide2"></a>
-                        </div>
-                        
-                </div>
-                <span id="tblanc2"></span>
-                <span id="tblanc3"></span>
-                <span id="tblanc4"></span>
-                </div>
-                
-                
+
+
+  <main>
+    <div class="menu">
+      <a href="#box-hello">Menu</a>
+      <a href="./project.html">Projet</a>
+      <a href="./CV_Huzaifah_Panchbhaya.pdf">CV</a>
+      <a href="mailto:huzai.panchbhaya@gmail.com">Contact</a>
+    </div>
+    <!-- partie hello world -->
+    <div id="pagepiling">
+
+      <!-- make a menu in right side-->
+      <div id="slide1" class="section slide-hello">
+        <div class="content-hello">
+          <span id="t1" class="tblanc"></span>
+          <span id="t2" class="tblanc"></span>
+          <span id="t3" class="tblanc"></span>
+          <span id="t4" class="tblanc"></span>
+          <span id="t5" class="tblanc"></span>
+          <span id="t6" class="tblanc"></span>
+          <span id="t7" class="tblanc"></span>
+          <span id="t8" class="tblanc"></span>
+          <span id="t9" class="tblanc"></span>
+          <div id="box-hello">
+            <div>
+              <h2>Hello</h2>
+              <h2 class="s">world.</h2>
             </div>
-            <!--Partie description-->
-            
-          <div id="slide2" class="slide">
-
-            <div class="cercle" id="c4"></div>
-            <div class="cercle" id="c5"></div>
-            <div class="cercle" id="c3"></div>
-            <div class="form-blue-purple">
-                <div class="form-red-blue">
-                  <div class="form-red">
-                    <div id="slide2-content-principal">
-                    </div>
-                  </div> 
-                </div>
-                </div>
-                <div id ="description">
-                  <span class="vertical">
-                    <div>
-                  <p>Je m'appelle <p class="blue">Huzaïfah</p> <p class="purple">PANCHBHAYA</p>, et je suis un grand passionée du web. D'origine Indienne et habitant en france, j'ai actuellement 18 ans et 
-                    je suis en période de formation en première année en <strong>IUT informatique </strong>afin d'apprendre et consolider
-                    mes bases dans l'optique de devenir un jour un <strong>développeur web full stack.</strong></p>
-                  </div>
-                  </span>
-                </div>
-                <div class="cercle" id="c0"></div>
-                <div id="citation-container">
-                  <h3 class="citation">"Le développeur est un artiste, il tisse son art à l'aide de lignes de code."</h3>
-                </div>
-                <div class="cercle" id="c1"></div>
-                <div class="cercle" id="c2"></div>
-
-
-
-              </div>
-              
-              
-          
-          <!--Partie catégories-->
-          
-          <div id="slide3" class="slide">
-            <h1>en cours de réalisation : section parcours</h1>
-            <div class="container-decouvrir">
-              <h3>Découvrez les projets !</h3>
-              <a href ="page_projet.html"><button class="button-animation">Découvrez mes projets</button></a>
-
+            <h2 class="line-1 anim-typewriter">I'm Huzaifah.</h2>
+            <div class="description">
+              <span class="vertical">
+                <p>Etudiant en IUT informatique à Bordeaux Gradigan</p>
+                <p>Passionnée de Web design et du développement côté Front-End</p>
+              </span>
             </div>
-          </div>
-
-          </main>
-          <footer>
             <div class="contact">
               <a href="https://github.com/Helloky"><img src="https://cdn-icons-png.flaticon.com/512/733/733609.png"></a>
-              <a href="https://fr.linkedin.com/"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"></a>
-              <a href="mailto:huzai.panchbhaya@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/95/95627.png"></a>
+              <a href="https://www.linkedin.com/in/huzaifah-panchbhaya-a804b3253"><img
+                  src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"></a>
+              <a href="mailto:huzai.panchbhaya@gmail.com"><img
+                  src="https://cdn-icons-png.flaticon.com/512/95/95627.png"></a>
             </div>
-            <h1>HUZAIFAH PANCHBHAYA</h1>
-            <h2>Tout droits réservés © | Site Portofolio créé dans le cadre d'un projet entiérment réalisé en HTML CSS.</h2>
-          </footer>
+            <div class="fleche">
+              <h3>Déroulez pour découvrir</h3>
+              <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""
+                href="#slide2"></a>
+            </div>
 
-    </body>
+          </div>
+        </div>
+
+
+      </div>
+      <!--Partie A propos de moi-->
+
+      <div id="slide2" class="section slide">
+        <div class="containt-title">
+          <h2>Qui suis-je ?</h2>
+        </div>
+
+        <div id="content-profil">
+          <div id="image-huz">
+            <img src="./Image/IMG_5573.jpg">
+          </div>
+          <div class="content-text">
+            <span class="vertical">
+              <p> D’origine indienne et vivant en france, je me forme actuellement en BUT Informatique pour apprendre et
+                consolider mes connaissances pour vivre de ma passion un jour, <b>en tant que développeur web full
+                  stack.</b></p>
+              <p> Curieux, créatif et persévérence sont les trois mots d'ordre qui me permet d'avancer dans les
+                differents projets que je réalise, en tentant de faire toujour mieux la prochaine fois. </p>
+              <h4>Mon but ?</h4>
+              <p> C'est de concevoir un site Internet a partir d'un cahier des charges, sous sa forme graphique mais
+                aussi côté serveur, et d'en effectuer sa maintenance. </p>
+
+            </span>
+            <a href="CV_Huzaifah_Panchbhaya.pdf" download="CV_Huzaifah_Panchbhaya.pdf">
+              <button type="button" id="buttonCv"> Cliquez pour télécharger mon Cv !</button>
+            </a>
+
+          </div>
+
+
+          
+        </div>
+
+      </div>
+
+
+
+
+      <!--Partie ccomptétences -->
+
+      <div id="slide3" class="section slide">
+        <div class="containt-title">
+          <h2>Mes compétences</h2>
+        </div>
+
+        <p>Dans un monde qui évolue constament, il est important d'être polyvalent dans son domaine et pouvoir couvrir
+          un maximum de compétences logicielles (pas que d'ailleurs...).
+          C'est pourquoi j'essaie d'élargir au maxiumun mes connaissances en apprenant d'autres.</p>
+
+
+        <div id="content-competences">
+          <div class="competences">
+            <div class="language-title">
+              <h3>Language Front - End :</h3>
+            </div>
+            <div class="content-language">
+              <div class="box-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/1051/1051328.png">
+                <p>HTML</p>
+              </div>
+              <div class="box-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/82/82127.png">
+                <p>CSS</p>
+              </div>
+              <div class="box-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/721/721671.png">
+                <p>JavaScript</p>
+              </div>
+            </div>
+            <div class="language-title">
+              <h3>Language Back - End :</h3>
+            </div>
+            <div class="content-language">
+              <div class="box-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968231.png">
+                <p>Java</p>
+              </div>
+              <div class="box-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/5815/5815809.png">
+                <p>SQL</p>
+              </div>
+              <div class="box-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/8142/8142583.png">
+                <p>C</p>
+              </div>
+              <div class="box-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/7544/7544562.png">
+                <p>Bash</p>
+              </div>
+              <div class="box-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968544.png">
+                <p>Python</p>
+              </div>
+            </div>
+            <div class="language-title">
+              <h3>Autres :</h3>
+            </div>
+            <div class="content-language">
+              <div class="box-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/6038/6038771.png">
+                <p>Git</p>
+              </div>
+              <div class="box-img" id="canva">
+                <img
+                  src="https://images.ctfassets.net/uqw1u4k79vvo/KWgPjF7Hhnpa423vD3Yx7/32ce7afbd50d82f679202c2d186815bd/Canva_Logo_White.png"
+                  alt="logo-canva">
+                <p>Canva</p>
+              </div>
+              <div class="box-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968719.png">
+                <p>Figma</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span id="t10" class="tblanc"></span>
+      <span id="t11" class="tblanc"></span>
+      <span id="t12" class="tblanc"></span>
+      <span id="t13" class="tblanc"></span>
+      <span id="t14" class="tblanc"></span>
+
+      <div id="slide4" class="section slide">
+        <div class="containt-title">
+          <h2>Mes projets</h2>
+        </div>
+        <p>Voici mes projets divers et varié produit lors de mon cursus et en dehors.</p>
+        <div id="content-projet">
+          <div class="box-projet">
+            <a href="./RepExt/RET.EXP PROJET WEB.pdf">
+            <img src="./Image/Capture_web.PNG">
+          </a>
+            <h1>RHPC - SITE WEB</h1>
+          </div>
+          <div class="box-projet">
+            <a href="./RepExt/RET.EXP PROJET LOWATEM.pdf">
+            <img src="./Image/capture_lowtem1.png">
+          </a>
+            <h1>LOWATEM</h1>
+          </div>
+        </div>
+        <a id="lienprojet" href="project.html">Voir plus ...</a>
+      </div>
+      <div id="slide5" class="section slide">
+        <div class="containt-title">
+          <h2>Contactez moi</h2>
+        </div>
+        <p>Vous pouvez me contacter via le formulaire ci-dessous ou via les réseaux sociaux.</p>
+        <div id="content-form">
+          <form action="mailto:huzai.panchbhaya@gmail.com">
+            <input type="text" name="name" placeholder="Nom">
+            <input type="text" name="email" placeholder="Email">
+            <input type="text" name="subject" placeholder="Sujet">
+            <textarea name="message" placeholder="Message"></textarea>
+            <input type="submit" value="Envoyer">
+          </form>
+        </div>
+        <div id="footer">
+        <h1>HUZAIFAH PANCHBHAYA</h1>
+        <div class="contact">
+          <a href="https://github.com/Helloky"><img src="https://cdn-icons-png.flaticon.com/512/733/733609.png"></a>
+          <a href="https://fr.linkedin.com/"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"></a>
+          <a href="mailto:huzai.panchbhaya@gmail.com"><img
+              src="https://cdn-icons-png.flaticon.com/512/95/95627.png"></a>
+        </div>
+        <h2>Tout droits réservés © | Site Portofolio créé dans le cadre d'un projet entiérment réalisé en HTML CSS.</h2>
+        </div>
+      </div>
+    </div>
+    <span id="t15"  class="tblanc"></span>
+    <span id="t16" class="tblanc"></span>
+    <span  id="t17" class="tblanc"></span>
+    <span id="t18" class="tblanc"></span>
+
+
+
+  </main>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <script type="text/javascript">
+
+    /*
+    if ($(window).width() > 800) {
+      $(document).ready(function () {
+      $('#pagepiling').pagepiling({
+        menu: null,
+        direction: 'vertical',
+        verticalCentered: true,
+        sectionsColor: [],
+        anchors: [],
+        scrollingSpeed: 800,
+        easing: 'swing',
+        loopBottom: false,
+        loopTop: false,
+        css3: true,
+        navigation: {
+          'textColor': '#000',
+          'bulletsColor': '#fff',
+          'position': 'right',
+          'tooltips': ['Accueil', 'Qui suis-je ?', 'Mes compétences', 'Mes projets', 'Me contacter']
+        },
+        normalScrollElements: null,
+        normalScrollElementTouchThreshold: 5,
+        touchSensitivity: 5,
+        keyboardScrolling: true,
+        sectionSelector: '.section',
+        animateAnchor: true,
+        //events
+        onLeave: function (index, nextIndex, direction) { },
+        afterLoad: function (anchorLink, index) { },
+        afterRender: function () { },
+      });
+    });
+    }
+    */
+
+  </script>
+  <script src="jquery.pagepiling.js"></script>
+  <script>
+
+    window.sr = ScrollReveal();
+    sr.reveal('.content-hello', {
+      duration: 1000,
+      origin: 'bottom',
+      distance: '300px'
+    });
+    sr.reveal('.container-decouvrir', {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '300px'
+    });
+    sr.reveal('.contact', {
+      duration: 3000,
+      origin: 'left',
+      distance: '300px'
+    });
+    sr.reveal('.content-competence', {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '300px'
+    });
+    sr.reveal('.content-language', {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '300px'
+    });
+    sr.reveal('.content-projet', {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '300px'
+    });
+    sr.reveal('.content-form', {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '300px'
+    });
+    sr.reveal('.content-footer', {
+      duration: 300,
+      origin: 'left',
+      distance: '300px'
+    });
+    sr.reveal('.box-img', {
+      duration: 1000,
+      origin: 'right',
+      distance: '300px'
+    });
+    sr.reveal('.box-projet', {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '300px'
+    });
+    sr.reveal('.box-competence', {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '300px'
+    });
+    sr.reveal('.box-language', {
+      duration: 300,
+      origin: 'bottom',
+      distance: '300px'
+    });
+    sr.reveal('.box-form', {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '300px'
+    });
+    sr.reveal('.box-footer', {
+      duration: 300,
+      origin: 'left',
+      distance: '300px'
+    });
+    sr.reveal('.box-hello', {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '300px'
+    });
+    sr.reveal('.box-decouvrir', {
+      duration: 300,
+      origin: 'bottom',
+      distance: '300px'
+    });
+    sr.reveal('.box-contact', {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '300px'
+    }); 
+  </script>
+</body>
+
 </html>
